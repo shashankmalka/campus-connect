@@ -1,0 +1,147 @@
+/* Overall container for the results page */
+.results-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    background: linear-gradient(to right, #f3f4f6, #eef2f7); /* Soft gradient background */
+    min-height: 100vh;
+    font-family: 'Roboto', sans-serif; /* Modern font */
+  }
+  
+  /* Heading style for results */
+  .results-container h2 {
+    font-size: 2.6rem;
+    color: #2d2d2d; /* Dark text color for better contrast */
+    font-weight: 700;
+    margin-bottom: 40px;
+    letter-spacing: 1px; /* Slight letter spacing for sophistication */
+    text-align: center;
+  }
+  
+  /* No results message styling */
+  .no-results {
+    font-size: 1.3rem;
+    color: #ff5c8d; /* Bright pink for no results message */
+    font-weight: bold;
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  /* Container for each exam's results table */
+  .exam-table-container {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.05);
+    margin-bottom: 40px;
+    width: 100%;
+    max-width: 950px; /* Ensures tables don't stretch too wide */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  /* Hover effect for table containers */
+  .exam-table-container:hover {
+    transform: translateY(-8px); /* Slight lift effect */
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.1); /* Deeper shadow */
+  }
+  
+  /* Styling for the exam name in each section */
+  .exam-name {
+    font-size: 2rem;
+    color: #6c63ff; /* Purple color for emphasis */
+    margin-bottom: 25px;
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase; /* Making exam names uppercase for style */
+    letter-spacing: 1px;
+  }
+  
+  /* Styling for the results table */
+  .results-table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+  }
+  
+  /* Table header */
+  .results-table th {
+    background-color: #6c63ff; /* Purple header background */
+    color: #fff;
+    padding: 15px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-align: left;
+    border-radius: 8px 8px 0 0; /* Rounded top corners */
+    text-transform: uppercase; /* Uppercase header text */
+  }
+  
+  /* Table rows */
+  .results-table td {
+    padding: 15px;
+    text-align: left;
+    font-size: 1.1rem;
+    color: #333;
+    border-bottom: 1px solid #ddd; /* Subtle row separation */
+  }
+  
+  /* Alternating row colors */
+  .results-table tr:nth-child(even) {
+    background-color: #f9f9f9; /* Light alternating row colors */
+  }
+  
+  /* Hover effect for rows */
+  .results-table tr:hover {
+    background-color: #f1f1f1; /* Slight background change */
+    cursor: pointer;
+  }
+  
+  /* No border on last row */
+  .results-table tr:last-child td {
+    border-bottom: none;
+  }
+  
+  /* Styling for table columns */
+  .results-table td {
+    border-left: 1px solid #ddd;
+  }
+  
+  .results-table td:first-child {
+    border-left: none;
+  }
+  
+  /* Styling for no results available message */
+  .no-results p {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #ff6b81;
+  }
+  
+  /* Responsive design for mobile */
+  @media (max-width: 768px) {
+    .results-container {
+      padding: 20px;
+    }
+  
+    .results-container h2 {
+      font-size: 2rem;
+    }
+  
+    .exam-name {
+      font-size: 1.7rem;
+    }
+  
+    .results-table th, .results-table td {
+      font-size: 1rem;
+      padding: 12px;
+    }
+  
+    .exam-table-container {
+      padding: 20px;
+    }
+  
+    .no-results p {
+      font-size: 1.3rem;
+    }
+  }
+  

@@ -1,0 +1,62 @@
+/* Main Container for Teacher Home */
+.teacher-home {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* Header Styles */
+.teacher-home .header {
+  background-color: #6ea4ac;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.teacher-home .profile-link {
+  color: rgb(16, 16, 16);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Sections Grid Container */
+.teacher-home .sections-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+/* Section Card Styling */
+.teacher-home .section {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding: 20px;
+  transition: transform 0.3s ease;
+}
+
+.teacher-home .section:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.teacher-home .section-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.teacher-home .section-icon {
+  width: 100px; /* Adjust as needed */
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.teacher-home footer {
+  text-align: center;
+  margin-top: 40px;
+  color: #777;
+}

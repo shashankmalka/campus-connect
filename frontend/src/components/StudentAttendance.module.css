@@ -1,0 +1,84 @@
+/* src/components/StudentAttendance.module.css */
+
+/* Container styling */
+.attendanceContainer {
+    padding: 30px;
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .attendanceContainer h2 {
+    text-align: center;
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  /* Error message styling */
+  .errorMessage {
+    color: #ff4d4f;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 18px;
+  }
+  
+  /* No records available message */
+  .noAttendance {
+    text-align: center;
+    font-size: 18px;
+    color: #888;
+  }
+  
+  /* Table styling */
+  .attendanceTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .attendanceTable th, .attendanceTable td {
+    padding: 12px 15px;
+    text-align: left;
+    border: 1px solid #ddd;
+  }
+  
+  .attendanceTable th {
+    background-color: #007bff;
+    color: white;
+    font-weight: 600;
+  }
+  
+  .attendanceTable td {
+    font-size: 16px;
+    color: #555;
+  }
+  
+  .attendanceTable tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  .attendanceTable tr:hover {
+    background-color: #e9f5ff;
+  }
+  
+  .attendanceTable td:last-child {
+    font-weight: bold;
+    color: #333;
+  }
+  
+  /* Responsiveness for smaller screens */
+  @media (max-width: 768px) {
+    .attendanceTable th, .attendanceTable td {
+      padding: 10px;
+    }
+    
+    .attendanceContainer {
+      padding: 20px;
+    }
+  }
+  

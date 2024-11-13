@@ -1,0 +1,117 @@
+/* Container for the Enroll Student Form */
+.enroll-student-container {
+  max-width: 800px;
+  margin: auto;
+  padding: 30px;
+  background-color: #f5f7fa;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  font-family: 'Arial', sans-serif;
+}
+
+/* Title Styling */
+.enroll-student-title {
+  text-align: center;
+  color: #4a90e2;
+  font-size: 2.2em;
+  margin-bottom: 25px;
+  font-weight: bold;
+}
+
+/* Error and Success Messages */
+.enroll-student-message {
+  text-align: center;
+  font-size: 1.1em;
+  margin-bottom: 20px;
+}
+
+.enroll-student-message--error {
+  color: #d9534f;
+}
+
+.enroll-student-message--success {
+  color: #5cb85c;
+}
+
+/* Form Styling */
+.enroll-student-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.enroll-student-form-label {
+  font-size: 1em;
+  color: #333;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.enroll-student-input {
+  padding: 12px;
+  font-size: 1em;
+  border: 1px solid #d1d1d1;
+  border-radius: 8px;
+  outline: none;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  background-color: #ffffff;
+}
+
+.enroll-student-input:focus {
+  border-color: #4a90e2;
+  box-shadow: 0 0 5px rgba(74, 144, 226, 0.5);
+}
+
+/* Course Dropdown Styling */
+.enroll-student-dropdown {
+  padding: 12px;
+  font-size: 1em;
+  border: 1px solid #d1d1d1;
+  border-radius: 8px;
+  outline: none;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  background-color: #ffffff;
+}
+
+.enroll-student-dropdown:focus {
+  border-color: #4a90e2;
+  box-shadow: 0 0 5px rgba(74, 144, 226, 0.5);
+}
+
+/* Submit Button Styling */
+.enroll-student-button {
+  padding: 12px;
+  background-color: #4a90e2;
+  color: white;
+  font-size: 1.1em;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-weight: bold;
+}
+
+.enroll-student-button:hover {
+  background-color: #357ab8;
+}
+
+.enroll-student-button:active {
+  background-color: #2b5a8a;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .enroll-student-container {
+    padding: 20px;
+  }
+
+  .enroll-student-title {
+    font-size: 1.8em;
+  }
+
+  .enroll-student-input,
+  .enroll-student-dropdown,
+  .enroll-student-button {
+    font-size: 1em;
+  }
+}

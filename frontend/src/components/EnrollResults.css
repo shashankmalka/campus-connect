@@ -1,0 +1,169 @@
+/* Overall container for the enroll result form */
+.enroll-results-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    background: linear-gradient(to right, #f9f9f9, #e6e6f0); /* Subtle gradient background */
+    min-height: 100vh;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  /* Heading for the form */
+  .enroll-results-container h2 {
+    font-size: 2.4rem;
+    color: #2d2d2d;
+    font-weight: 700;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+    text-align: center;
+    text-transform: uppercase; /* Adds emphasis to the heading */
+  }
+  
+
+  .success-message, .error-message {
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 400px;
+    box-sizing: border-box;
+  }
+  
+
+  .success-message {
+    background-color: #4caf50;
+    color: white;
+  }
+  
+  /* Error message (red) */
+  .error-message {
+    background-color: #ff5c8d;
+    color: white;
+  }
+  
+  /* Form styling */
+  .enroll-results-form {
+    background-color: white;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  /* Hover effect for form */
+  .enroll-results-form:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Form inputs and labels */
+  .enroll-results-form label {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #555;
+    margin-bottom: 10px;
+    display: block;
+  }
+  
+  .enroll-results-form input {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+  }
+  
+  /* Focus effect for inputs */
+  .enroll-results-form input:focus {
+    border-color: #6c63ff;
+    outline: none;
+  }
+  
+  /* Styling for the subject and score fields */
+  .enroll-results-form .subject-field,
+  .enroll-results-form .score-field {
+    display: inline-block;
+    width: 48%;
+    margin-right: 4%;
+  }
+  
+  .enroll-results-form .score-field {
+    margin-right: 0;
+  }
+  
+  .enroll-results-form .subject-field input,
+  .enroll-results-form .score-field input {
+    width: 100%;
+  }
+  
+  /* Button styling */
+  .enroll-results-form button {
+    background-color: #6c63ff;
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Hover effect for buttons */
+  .enroll-results-form button:hover {
+    background-color: #5a53e2;
+  }
+  
+  /* Styling for the "Add Another Subject" button */
+  .enroll-results-form button[type="button"] {
+    background-color: #f0f0f0;
+    color: #333;
+    border: 1px solid #ddd;
+    margin-top: 15px;
+  }
+  
+  /* Hover effect for "Add Another Subject" button */
+  .enroll-results-form button[type="button"]:hover {
+    background-color: #e0e0e0;
+  }
+  
+  /* Responsive design for mobile */
+  @media (max-width: 768px) {
+    .enroll-results-container {
+      padding: 20px;
+    }
+  
+    .enroll-results-container h2 {
+      font-size: 1.8rem;
+    }
+  
+    .enroll-results-form {
+      padding: 20px;
+      width: 100%;
+    }
+  
+    .enroll-results-form label {
+      font-size: 0.9rem;
+    }
+  
+    .enroll-results-form input {
+      font-size: 0.9rem;
+    }
+  
+    .enroll-results-form button {
+      font-size: 0.9rem;
+      padding: 10px;
+    }
+  }
+  

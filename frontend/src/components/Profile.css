@@ -1,0 +1,127 @@
+/* Overall profile container */
+.profile-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #f9fafb; /* Light background for a clean look */
+    min-height: 100vh;
+  }
+  
+  h1 {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  /* Profile details container */
+  .profile-details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 800px;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-top: 20px;
+  }
+  
+  /* Profile image styling */
+  .profile-img {
+    flex: 1 1 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .profile-img img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #6c63ff; /* Updated border color */
+  }
+  
+  /* Profile info styling */
+  .profile-info {
+    flex: 2 1 300px;
+    margin-left: 20px;
+  }
+  
+  .profile-info p {
+    font-size: 1.1rem;
+    color: #333;
+    margin-bottom: 10px;
+    line-height: 1.5;
+  }
+  
+  .profile-info p strong {
+    color: #6c63ff; /* Updated strong color */
+  }
+  
+  /* Social links section */
+  .social-links {
+    margin-top: 20px;
+  }
+  
+  .social-links p {
+    font-size: 1.1rem;
+    color: #333;
+  }
+  
+  .social-links a {
+    color: #2ebd18; /* Updated link color */
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    display: inline-block;
+    margin-bottom: 10px;
+  }
+  
+  /* Hover effect with underline */
+  .social-links a:hover {
+    color: #ff6f61; /* Updated hover color */
+    text-decoration: underline;
+    text-decoration-color: #ff6f61; /* Hover underline color */
+    transform: translateY(-2px); /* Subtle lift effect */
+  }
+  
+  /* Responsive styling for small screens */
+  @media (max-width: 768px) {
+    .profile-details {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .profile-info {
+      margin-left: 0;
+      text-align: center;
+    }
+  
+    .profile-img {
+      margin-bottom: 20px;
+    }
+  }
+  
+  /* Error message styling */
+  .error {
+    color: #ff4d4f; /* Error color */
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  /* Loading text styling */
+  .loading {
+    color: #333;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+  }
+  

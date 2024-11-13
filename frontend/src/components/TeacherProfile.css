@@ -1,0 +1,112 @@
+/* Overall profile container */
+.teacher-profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #f9fafb; /* Light background for a clean look */
+    min-height: 100vh;
+  }
+  
+  /* Title Styling */
+  .teacher-profile h1 {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  /* Profile details container */
+  .teacher-profile .profile-details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 800px;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-top: 20px;
+  }
+  
+  /* Profile image styling */
+  .teacher-profile .profile-image {
+    flex: 1 1 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .teacher-profile .profile-image img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #6c63ff; /* Updated border color */
+  }
+  
+  .teacher-profile .profile-image-placeholder {
+    text-align: center;
+    font-size: 1.1rem;
+    color: #666;
+    background-color: #e0e0e0;
+    border-radius: 10px;
+    padding: 20px;
+    width: 150px;
+  }
+  
+  /* Profile info styling */
+  .teacher-profile .profile-item {
+    flex: 2 1 300px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .teacher-profile .profile-item label {
+    font-weight: bold;
+    color: #6c63ff; /* Updated label color */
+  }
+  
+  .teacher-profile .profile-item p {
+    font-size: 1.1rem;
+    color: #333;
+    margin-top: 5px;
+  }
+  
+  /* Error message styling */
+  .teacher-profile .error-message {
+    color: #ff4d4f; /* Error color */
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  /* Loading text styling */
+  .teacher-profile .loading {
+    color: #333;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  /* Responsive styling for small screens */
+  @media (max-width: 768px) {
+    .teacher-profile .profile-details {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .teacher-profile .profile-item {
+      text-align: center;
+      margin-left: 0;
+    }
+  
+    .teacher-profile .profile-image {
+      margin-bottom: 20px;
+    }
+  }
+  

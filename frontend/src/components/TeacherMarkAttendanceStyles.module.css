@@ -1,0 +1,148 @@
+/* src/components/TeacherMarkAttendanceStyles.module.css */
+
+/* Container Styling */
+.mark-attendance-container {
+  background-color: #ffffff;
+  padding: 30px;
+  max-width: 900px;
+  margin: 50px auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  font-family: 'Arial', sans-serif;
+}
+
+/* Header Styling */
+.mark-attendance-container h2 {
+  text-align: center;
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+/* Success and Error Messages */
+.success-message, .error-message {
+  text-align: center;
+  padding: 12px 20px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+.success-message {
+  background-color: #4CAF50;
+  color: white;
+  font-weight: bold;
+}
+
+.error-message {
+  background-color: #f44336;
+  color: white;
+  font-weight: bold;
+}
+
+/* Form Styling */
+.mark-attendance-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  font-size: 16px;
+}
+
+/* Form Input Fields */
+.mark-attendance-form div {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.mark-attendance-form label {
+  color: #333;
+  font-weight: 600;
+}
+
+.mark-attendance-form input {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+  width: 100%;
+  max-width: 300px;
+  outline: none;
+  transition: border 0.3s ease;
+}
+
+.mark-attendance-form input:focus {
+  border-color: #007bff;
+}
+
+/* Subject and Attendance Field Group */
+.subject-attendance-group {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Subject and Attendance Input Styling */
+.subject-field, .attendance-field {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.subject-field input, .attendance-field input {
+  width: 100%;
+}
+
+/* Add Subject Button */
+button {
+  padding: 12px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  width: 250px;
+  align-self: center;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Submit Button Styling */
+button[type="submit"] {
+  background-color: #28a745;
+  width: 250px;
+}
+
+button[type="submit"]:hover {
+  background-color: #218838;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .mark-attendance-container {
+    padding: 20px;
+  }
+
+  .mark-attendance-form {
+    gap: 15px;
+  }
+
+  .subject-attendance-group {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .subject-field, .attendance-field {
+    width: 100%;
+  }
+
+  button {
+    width: 100%;
+  }
+}

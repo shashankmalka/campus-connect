@@ -1,0 +1,119 @@
+/* General Wrapper */
+.login-page-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #f1f1f1, #e0e0e0); /* Subtle background gradient */
+}
+
+/* Form Container */
+.login-form-container {
+  width: 100%;
+  max-width: 420px; /* Slightly wider form for balance */
+  background: #ffffff; /* Clean white background */
+  border-radius: 10px; 
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Soft shadow */
+  padding: 30px;
+  position: relative;
+}
+
+/* Title and Subtitle */
+.login-title-container {
+  text-align: center;
+}
+
+.login-title {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.login-subtitle {
+  font-size: 1rem;
+  color: #555;
+  margin-top: 5px;
+}
+
+/* Error Message */
+.error-message {
+  color: #f44336;
+  text-align: center;
+  margin-top: 10px;
+}
+
+/* Input Fields */
+.input-field-container {
+  margin-bottom: 25px;
+}
+
+.input-label {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+.input-field {
+  width: 100%;
+  padding: 12px 15px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  color: #555;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.input-field:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Buttons */
+.submit-btn {
+  width: 100%;
+  padding: 12px;
+  background-color: #007bff;
+  color: white;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Forgot Password Link */
+.forgot-password-link {
+  text-align: right;
+  display: block;
+  color: #007bff;
+  text-decoration: none;
+  font-size: 0.9rem;
+  margin-top: 10px;
+}
+
+.forgot-password-link:hover {
+  text-decoration: underline;
+}
+
+/* Toggle Role Link */
+.role-toggle-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.toggle-link {
+  color: #007bff;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.toggle-link:hover {
+  text-decoration: underline;
+}
